@@ -1,0 +1,511 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		357DD08D257B152E0039349C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357DD08C257B152E0039349C /* AppDelegate.swift */; };
+		357DD08F257B152E0039349C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357DD08E257B152E0039349C /* SceneDelegate.swift */; };
+		357DD091257B152E0039349C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357DD090257B152E0039349C /* ViewController.swift */; };
+		357DD094257B152E0039349C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 357DD092257B152E0039349C /* Main.storyboard */; };
+		357DD097257B152E0039349C /* MetalBeast.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 357DD095257B152E0039349C /* MetalBeast.xcdatamodeld */; };
+		357DD099257B15300039349C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 357DD098257B15300039349C /* Assets.xcassets */; };
+		357DD09C257B15300039349C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 357DD09A257B15300039349C /* LaunchScreen.storyboard */; };
+		357DD0A8257B15EB0039349C /* Bands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357DD0A7257B15EB0039349C /* Bands.swift */; };
+		35B6D845257B268D0021BDFD /* bands.json in Resources */ = {isa = PBXBuildFile; fileRef = 35B6D844257B268D0021BDFD /* bands.json */; };
+		35B6D847257B3CA70021BDFD /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B6D846257B3CA70021BDFD /* SwiftyJSON.swift */; };
+		35B6D849257B6EEE0021BDFD /* BandGeneratorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B6D848257B6EEE0021BDFD /* BandGeneratorVC.swift */; };
+		35B6D84B257B7D160021BDFD /* WebVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B6D84A257B7D160021BDFD /* WebVC.swift */; };
+		35B6D84E257B84E20021BDFD /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35B6D84D257B84E20021BDFD /* WebKit.framework */; };
+		35B6D851257BC7080021BDFD /* People=shit.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 35B6D850257BC7080021BDFD /* People=shit.m4a */; };
+		35B6D854257BC8E00021BDFD /* Left behind.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 35B6D853257BC8E00021BDFD /* Left behind.m4a */; };
+		35B6D856257BC8E70021BDFD /* Psychosocial.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 35B6D855257BC8E60021BDFD /* Psychosocial.m4a */; };
+		35B6D858257C79D00021BDFD /* TVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B6D857257C79D00021BDFD /* TVC.swift */; };
+		35B6D85A257C82A30021BDFD /* AddVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B6D859257C82A30021BDFD /* AddVC.swift */; };
+		35B6D85C257CAC2D0021BDFD /* GenreType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B6D85B257CAC2D0021BDFD /* GenreType.swift */; };
+		35B6D85E257CBF440021BDFD /* 0.png in Resources */ = {isa = PBXBuildFile; fileRef = 35B6D85D257CBF440021BDFD /* 0.png */; };
+		35B6D860257CBF490021BDFD /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 35B6D85F257CBF490021BDFD /* 1.png */; };
+		35B6D862257CBF500021BDFD /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 35B6D861257CBF500021BDFD /* 2.png */; };
+		35B6D864257CBF540021BDFD /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 35B6D863257CBF540021BDFD /* 3.png */; };
+		35B6D866257CBF590021BDFD /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = 35B6D865257CBF580021BDFD /* 4.png */; };
+		35B6D868257CBF5E0021BDFD /* 5.png in Resources */ = {isa = PBXBuildFile; fileRef = 35B6D867257CBF5E0021BDFD /* 5.png */; };
+		35B6D86A257CE91C0021BDFD /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B6D869257CE91C0021BDFD /* ProfileVC.swift */; };
+		35B6D86C257D115E0021BDFD /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B6D86B257D115E0021BDFD /* Utils.swift */; };
+		35B6D86E257D26F70021BDFD /* BundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B6D86D257D26F70021BDFD /* BundleExtension.swift */; };
+		35B6D870257D27730021BDFD /* InfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B6D86F257D27730021BDFD /* InfoVC.swift */; };
+		35B6D872257DCD950021BDFD /* metallica.png in Resources */ = {isa = PBXBuildFile; fileRef = 35B6D871257DCD950021BDFD /* metallica.png */; };
+		35B6D874257DCDCC0021BDFD /* Megadeth.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 35B6D873257DCDCC0021BDFD /* Megadeth.jpg */; };
+		35B6D876257DCDD20021BDFD /* Slayer.png in Resources */ = {isa = PBXBuildFile; fileRef = 35B6D875257DCDD20021BDFD /* Slayer.png */; };
+		35B6D878257DCDD80021BDFD /* behemoth.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 35B6D877257DCDD80021BDFD /* behemoth.jpg */; };
+		35B6D87A257DCDDC0021BDFD /* Slipknot.png in Resources */ = {isa = PBXBuildFile; fileRef = 35B6D879257DCDDC0021BDFD /* Slipknot.png */; };
+		35B6D87D257DD4FF0021BDFD /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 35B6D87F257DD4FF0021BDFD /* Localizable.strings */; };
+		35B6D882257DE9B50021BDFD /* b.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 35B6D881257DE9B50021BDFD /* b.jpg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		357DD089257B152E0039349C /* MetalBeast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MetalBeast.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		357DD08C257B152E0039349C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		357DD08E257B152E0039349C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		357DD090257B152E0039349C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		357DD093257B152E0039349C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		357DD096257B152E0039349C /* MetalBeast.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MetalBeast.xcdatamodel; sourceTree = "<group>"; };
+		357DD098257B15300039349C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		357DD09B257B15300039349C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		357DD09D257B15300039349C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		357DD0A7257B15EB0039349C /* Bands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bands.swift; sourceTree = "<group>"; };
+		35B6D844257B268D0021BDFD /* bands.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = bands.json; sourceTree = "<group>"; };
+		35B6D846257B3CA70021BDFD /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		35B6D848257B6EEE0021BDFD /* BandGeneratorVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BandGeneratorVC.swift; sourceTree = "<group>"; };
+		35B6D84A257B7D160021BDFD /* WebVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebVC.swift; sourceTree = "<group>"; };
+		35B6D84D257B84E20021BDFD /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		35B6D850257BC7080021BDFD /* People=shit.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "People=shit.m4a"; sourceTree = "<group>"; };
+		35B6D853257BC8E00021BDFD /* Left behind.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Left behind.m4a"; sourceTree = "<group>"; };
+		35B6D855257BC8E60021BDFD /* Psychosocial.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Psychosocial.m4a; sourceTree = "<group>"; };
+		35B6D857257C79D00021BDFD /* TVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVC.swift; sourceTree = "<group>"; };
+		35B6D859257C82A30021BDFD /* AddVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddVC.swift; sourceTree = "<group>"; };
+		35B6D85B257CAC2D0021BDFD /* GenreType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreType.swift; sourceTree = "<group>"; };
+		35B6D85D257CBF440021BDFD /* 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 0.png; sourceTree = "<group>"; };
+		35B6D85F257CBF490021BDFD /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		35B6D861257CBF500021BDFD /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
+		35B6D863257CBF540021BDFD /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
+		35B6D865257CBF580021BDFD /* 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4.png; sourceTree = "<group>"; };
+		35B6D867257CBF5E0021BDFD /* 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 5.png; sourceTree = "<group>"; };
+		35B6D869257CE91C0021BDFD /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		35B6D86B257D115E0021BDFD /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		35B6D86D257D26F70021BDFD /* BundleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleExtension.swift; sourceTree = "<group>"; };
+		35B6D86F257D27730021BDFD /* InfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoVC.swift; sourceTree = "<group>"; };
+		35B6D871257DCD950021BDFD /* metallica.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = metallica.png; sourceTree = "<group>"; };
+		35B6D873257DCDCC0021BDFD /* Megadeth.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Megadeth.jpg; sourceTree = "<group>"; };
+		35B6D875257DCDD20021BDFD /* Slayer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Slayer.png; sourceTree = "<group>"; };
+		35B6D877257DCDD80021BDFD /* behemoth.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = behemoth.jpg; sourceTree = "<group>"; };
+		35B6D879257DCDDC0021BDFD /* Slipknot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Slipknot.png; sourceTree = "<group>"; };
+		35B6D87E257DD4FF0021BDFD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		35B6D880257DD5170021BDFD /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		35B6D881257DE9B50021BDFD /* b.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = b.jpg; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		357DD086257B152E0039349C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35B6D84E257B84E20021BDFD /* WebKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		357DD080257B152E0039349C = {
+			isa = PBXGroup;
+			children = (
+				357DD08B257B152E0039349C /* MetalBeast */,
+				357DD08A257B152E0039349C /* Products */,
+				35B6D84C257B84E20021BDFD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		357DD08A257B152E0039349C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				357DD089257B152E0039349C /* MetalBeast.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		357DD08B257B152E0039349C /* MetalBeast */ = {
+			isa = PBXGroup;
+			children = (
+				35B6D852257BC8CA0021BDFD /* musicandimages */,
+				35B6D84F257BBA280021BDFD /* VC */,
+				35B6D846257B3CA70021BDFD /* SwiftyJSON.swift */,
+				357DD08C257B152E0039349C /* AppDelegate.swift */,
+				357DD08E257B152E0039349C /* SceneDelegate.swift */,
+				357DD090257B152E0039349C /* ViewController.swift */,
+				357DD092257B152E0039349C /* Main.storyboard */,
+				357DD098257B15300039349C /* Assets.xcassets */,
+				357DD09A257B15300039349C /* LaunchScreen.storyboard */,
+				357DD09D257B15300039349C /* Info.plist */,
+				357DD095257B152E0039349C /* MetalBeast.xcdatamodeld */,
+				357DD0A7257B15EB0039349C /* Bands.swift */,
+				35B6D844257B268D0021BDFD /* bands.json */,
+				35B6D85B257CAC2D0021BDFD /* GenreType.swift */,
+				35B6D86B257D115E0021BDFD /* Utils.swift */,
+				35B6D86D257D26F70021BDFD /* BundleExtension.swift */,
+				35B6D87F257DD4FF0021BDFD /* Localizable.strings */,
+			);
+			path = MetalBeast;
+			sourceTree = "<group>";
+		};
+		35B6D84C257B84E20021BDFD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				35B6D84D257B84E20021BDFD /* WebKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		35B6D84F257BBA280021BDFD /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				35B6D84A257B7D160021BDFD /* WebVC.swift */,
+				35B6D848257B6EEE0021BDFD /* BandGeneratorVC.swift */,
+				35B6D857257C79D00021BDFD /* TVC.swift */,
+				35B6D859257C82A30021BDFD /* AddVC.swift */,
+				35B6D869257CE91C0021BDFD /* ProfileVC.swift */,
+				35B6D86F257D27730021BDFD /* InfoVC.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		35B6D852257BC8CA0021BDFD /* musicandimages */ = {
+			isa = PBXGroup;
+			children = (
+				35B6D855257BC8E60021BDFD /* Psychosocial.m4a */,
+				35B6D850257BC7080021BDFD /* People=shit.m4a */,
+				35B6D853257BC8E00021BDFD /* Left behind.m4a */,
+				35B6D85D257CBF440021BDFD /* 0.png */,
+				35B6D85F257CBF490021BDFD /* 1.png */,
+				35B6D861257CBF500021BDFD /* 2.png */,
+				35B6D863257CBF540021BDFD /* 3.png */,
+				35B6D865257CBF580021BDFD /* 4.png */,
+				35B6D867257CBF5E0021BDFD /* 5.png */,
+				35B6D871257DCD950021BDFD /* metallica.png */,
+				35B6D873257DCDCC0021BDFD /* Megadeth.jpg */,
+				35B6D875257DCDD20021BDFD /* Slayer.png */,
+				35B6D877257DCDD80021BDFD /* behemoth.jpg */,
+				35B6D879257DCDDC0021BDFD /* Slipknot.png */,
+				35B6D881257DE9B50021BDFD /* b.jpg */,
+			);
+			path = musicandimages;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		357DD088257B152E0039349C /* MetalBeast */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 357DD0A0257B15300039349C /* Build configuration list for PBXNativeTarget "MetalBeast" */;
+			buildPhases = (
+				357DD085257B152E0039349C /* Sources */,
+				357DD086257B152E0039349C /* Frameworks */,
+				357DD087257B152E0039349C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MetalBeast;
+			productName = MetalBeast;
+			productReference = 357DD089257B152E0039349C /* MetalBeast.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		357DD081257B152E0039349C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1170;
+				LastUpgradeCheck = 1170;
+				ORGANIZATIONNAME = "Shiyao Guo";
+				TargetAttributes = {
+					357DD088257B152E0039349C = {
+						CreatedOnToolsVersion = 11.7;
+					};
+				};
+			};
+			buildConfigurationList = 357DD084257B152E0039349C /* Build configuration list for PBXProject "MetalBeast" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				de,
+			);
+			mainGroup = 357DD080257B152E0039349C;
+			productRefGroup = 357DD08A257B152E0039349C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				357DD088257B152E0039349C /* MetalBeast */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		357DD087257B152E0039349C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35B6D878257DCDD80021BDFD /* behemoth.jpg in Resources */,
+				35B6D874257DCDCC0021BDFD /* Megadeth.jpg in Resources */,
+				35B6D872257DCD950021BDFD /* metallica.png in Resources */,
+				35B6D866257CBF590021BDFD /* 4.png in Resources */,
+				35B6D864257CBF540021BDFD /* 3.png in Resources */,
+				35B6D860257CBF490021BDFD /* 1.png in Resources */,
+				35B6D882257DE9B50021BDFD /* b.jpg in Resources */,
+				35B6D85E257CBF440021BDFD /* 0.png in Resources */,
+				35B6D862257CBF500021BDFD /* 2.png in Resources */,
+				357DD09C257B15300039349C /* LaunchScreen.storyboard in Resources */,
+				357DD099257B15300039349C /* Assets.xcassets in Resources */,
+				35B6D854257BC8E00021BDFD /* Left behind.m4a in Resources */,
+				35B6D845257B268D0021BDFD /* bands.json in Resources */,
+				357DD094257B152E0039349C /* Main.storyboard in Resources */,
+				35B6D856257BC8E70021BDFD /* Psychosocial.m4a in Resources */,
+				35B6D876257DCDD20021BDFD /* Slayer.png in Resources */,
+				35B6D87A257DCDDC0021BDFD /* Slipknot.png in Resources */,
+				35B6D87D257DD4FF0021BDFD /* Localizable.strings in Resources */,
+				35B6D868257CBF5E0021BDFD /* 5.png in Resources */,
+				35B6D851257BC7080021BDFD /* People=shit.m4a in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		357DD085257B152E0039349C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35B6D86A257CE91C0021BDFD /* ProfileVC.swift in Sources */,
+				35B6D85C257CAC2D0021BDFD /* GenreType.swift in Sources */,
+				357DD091257B152E0039349C /* ViewController.swift in Sources */,
+				35B6D86E257D26F70021BDFD /* BundleExtension.swift in Sources */,
+				35B6D870257D27730021BDFD /* InfoVC.swift in Sources */,
+				357DD097257B152E0039349C /* MetalBeast.xcdatamodeld in Sources */,
+				357DD08D257B152E0039349C /* AppDelegate.swift in Sources */,
+				35B6D86C257D115E0021BDFD /* Utils.swift in Sources */,
+				35B6D849257B6EEE0021BDFD /* BandGeneratorVC.swift in Sources */,
+				35B6D85A257C82A30021BDFD /* AddVC.swift in Sources */,
+				35B6D858257C79D00021BDFD /* TVC.swift in Sources */,
+				35B6D847257B3CA70021BDFD /* SwiftyJSON.swift in Sources */,
+				35B6D84B257B7D160021BDFD /* WebVC.swift in Sources */,
+				357DD0A8257B15EB0039349C /* Bands.swift in Sources */,
+				357DD08F257B152E0039349C /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		357DD092257B152E0039349C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				357DD093257B152E0039349C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		357DD09A257B15300039349C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				357DD09B257B15300039349C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		35B6D87F257DD4FF0021BDFD /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				35B6D87E257DD4FF0021BDFD /* en */,
+				35B6D880257DD5170021BDFD /* de */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		357DD09E257B15300039349C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		357DD09F257B15300039349C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		357DD0A1257B15300039349C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MetalBeast/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sguo18.MetalBeast;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		357DD0A2257B15300039349C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MetalBeast/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sguo18.MetalBeast;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		357DD084257B152E0039349C /* Build configuration list for PBXProject "MetalBeast" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				357DD09E257B15300039349C /* Debug */,
+				357DD09F257B15300039349C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		357DD0A0257B15300039349C /* Build configuration list for PBXNativeTarget "MetalBeast" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				357DD0A1257B15300039349C /* Debug */,
+				357DD0A2257B15300039349C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		357DD095257B152E0039349C /* MetalBeast.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				357DD096257B152E0039349C /* MetalBeast.xcdatamodel */,
+			);
+			currentVersion = 357DD096257B152E0039349C /* MetalBeast.xcdatamodel */;
+			path = MetalBeast.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 357DD081257B152E0039349C /* Project object */;
+}

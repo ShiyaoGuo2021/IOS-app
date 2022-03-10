@@ -1,0 +1,30 @@
+/* 
+  Localizable.strings
+  MetalBeast
+
+  Created by Leon on 12/7/20.
+  Copyright © 2020 Shiyao Guo. All rights reserved.
+*/
+"str_band"="Band";
+"str_year"="Jahr";
+"str_origin"="Ursprung";
+"str_generate"="Generieren!";
+"str_welcometitle"="Willkommen bei MetalBeast!";
+"str_welcomemess"="Behalte deine Erfahrungen mit Metal im Auge! Wischen Sie in 4 Richtungen!";
+"alertmsg"="Sind Sie sicher, dass Sie löschen möchten? Das kann nicht rückgängig gemacht werden";
+"warning"="Warnung";
+"delete"="Löschen";
+"cancel"="Stornieren";
+"str_song"="Lied";
+"str_artist"="Künstler";
+"str_mood"="Stimmung";
+"str_add"="Hinzufügen";
+"str_cancel"="Stornieren";
+"canceltitle"="Du willst zurück?";
+"cancelmsg"="Änderungen würden nicht gespeichert!";
+"actionyes"="Ja";
+"actionno"="Nein";
+"str_level"="Niveau";
+"str_experience"="Erfahrung";
+"str_exp"="Du hast EXP erhalten!";
+"str_upgrade"="Du hast ein Upgrade durchgeführt!";
